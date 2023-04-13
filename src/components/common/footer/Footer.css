@@ -1,0 +1,53 @@
+footer {
+  background-color: #0f3460;
+  padding: 100px 0;
+  color: #fff;
+}
+footer .logo {
+  margin-bottom: 30px;
+}
+footer .logo span {
+  display: flex;
+  font-size: 35px;
+  font-weight: 700;
+  position: relative;
+  color: cyan;
+}
+footer .logo span p {
+  font-size: 20px;
+  position: absolute;
+  left: 20px;
+  top: 12px;
+  color: cyan;
+  text-decoration: underline;
+  font-weight: 700;
+}
+footer .img {
+  background-color: #0c2a4d;
+  padding: 15px 20px;
+  border-radius: 5px;
+}
+footer .img i {
+  font-size: 20px;
+  margin: 5px;
+}
+footer .img span {
+  margin-top: 5px;
+}
+footer p {
+  font-size: 14px;
+  font-weight: 300;
+  opacity: 0.5;
+  margin-bottom: 20px;
+}
+footer h2 {
+  margin-bottom: 20px;
+}
+footer li {
+  margin-bottom: 10px;
+  opacity: 0.5;
+}
+.darkMode button {
+  padding: 4px 10px;
+  border-radius: 5px;
+}
