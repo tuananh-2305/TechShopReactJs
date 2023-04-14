@@ -14,13 +14,17 @@ const Pages = ({ productItems, cartItem, addToCart, shopItems }) => {
   return (
     <>
       <Home cartItem={cartItem} mode={mode} />
-      <FlashDeals productItems={productItems} addToCart={addToCart} />
-      <TopCate />
-      <NewArrivals />
-      <Discount />
-      <Shop addToCart={addToCart} shopItems={shopItems} />
-      <Annocument />
-      <Wrapper />
+      <FlashDeals
+        productItems={productItems}
+        addToCart={addToCart}
+        mode={mode}
+      />
+      <TopCate mode={mode} />
+      <NewArrivals mode={mode} />
+      <Discount mode={mode} />
+      <Shop addToCart={addToCart} shopItems={shopItems} mode={mode} />
+      <Annocument mode={mode} />
+      <Wrapper mode={mode} />
     </>
   );
 };

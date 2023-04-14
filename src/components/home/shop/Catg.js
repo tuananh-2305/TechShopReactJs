@@ -1,11 +1,17 @@
 import React from "react";
 import Data from "../../assets/data/Data";
-const Catg = () => {
+const Catg = ({ mode }) => {
   const { catgData } = Data;
   return (
     <>
-      <div className="category">
-        <div className="chead d_flex">
+      <div
+        className="category"
+        style={{ background: mode ? "#15398f" : "white" }}
+      >
+        <div
+          className="chead d_flex"
+          style={{ color: mode ? "white" : "black" }}
+        >
           <h1>Brands </h1>
           <h1>Shops </h1>
         </div>

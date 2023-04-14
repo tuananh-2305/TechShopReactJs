@@ -1,11 +1,16 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-const Navbar = () => {
+const Navbar = ({ mode }) => {
   const [MobileMenu, setMobileMenu] = useState(false);
   return (
     <>
       <header className="header">
-        <div className="container d_flex">
+        <div
+          className="container d_flex"
+          style={{
+            background: mode ? "#0983b2" : "white",
+          }}
+        >
           <div className="catgrories d_flex">
             <span className="fa-solid fa-border-all"></span>
             <h4>

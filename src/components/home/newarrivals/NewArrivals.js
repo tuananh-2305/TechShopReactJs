@@ -2,15 +2,18 @@ import React from "react";
 import Arrival from "./Arrival";
 import "./style.css";
 import NewLogo from "./../../assets/images/newlogo.png";
-const NewArrivals = () => {
+const NewArrivals = ({ mode }) => {
   return (
     <>
-      <section className="NewArrivals background">
+      <section
+        className="NewArrivals background"
+        style={{ background: mode ? "#121f29" : "white" }}
+      >
         <div className="container">
           <div className="heading d_flex">
             <div className="heading-left row  f_flex">
               <img src={NewLogo} alt="" />
-              <h2>New Arrivals </h2>
+              <h2 style={{ color: mode ? "white" : "black" }}>New Arrivals </h2>
             </div>
             <div className="heading-right row ">
               <span>View all</span>
@@ -18,7 +21,7 @@ const NewArrivals = () => {
             </div>
           </div>
 
-          <Arrival />
+          <Arrival mode={mode} />
         </div>
       </section>
     </>

@@ -4,7 +4,12 @@ const Categories = ({ mode }) => {
   const { categories } = Data;
   return (
     <>
-      <div className="category">
+      <div
+        className="category"
+        style={{
+          background: mode ? "#fffbf4" : "white",
+        }}
+      >
         {categories.map((data, index) => {
           return (
             <div className="box f_flex" key={index}>

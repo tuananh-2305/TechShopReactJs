@@ -1,14 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Search = ({ cartItem }) => {
+const Search = ({ cartItem, mode }) => {
   window.addEventListener("scroll", function () {
     const search = document.querySelector(".search");
     search.classList.toggle("active", window.scrollY > 100);
   });
   return (
     <>
-      <section className="search">
+      <section
+        className="search"
+        style={{ background: mode ? "#121f29" : "white" }}
+      >
         <div className="container c_flex">
           <div className="logo width ">
             <span>

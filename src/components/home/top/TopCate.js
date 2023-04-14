@@ -2,22 +2,27 @@ import React from "react";
 import TopCart from "./TopCart";
 import "./Style.css";
 
-const TopCate = () => {
+const TopCate = ({ mode }) => {
   return (
     <>
-      <section className="TopCate background">
+      <section
+        className="TopCate background"
+        style={{ background: mode ? "#121f29" : "white" }}
+      >
         <div className="container">
           <div className="heading d_flex">
             <div className="heading-left row  f_flex">
               <i className="fa-solid fa-border-all"></i>
-              <h2>Top Categories</h2>
+              <h2 style={{ color: mode ? "white" : "black" }}>
+                Top Categories
+              </h2>
             </div>
             <div className="heading-right row">
               <span>View all</span>
               <i className="fa-solid fa-caret-right"></i>
             </div>
           </div>
-          <TopCart />
+          <TopCart mode={mode} />
         </div>
       </section>
     </>

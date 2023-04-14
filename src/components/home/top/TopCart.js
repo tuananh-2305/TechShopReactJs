@@ -3,7 +3,7 @@ import Data from "../../assets/data/Data";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-const TopCart = () => {
+const TopCart = ({ mode }) => {
   const { topCart } = Data;
   const settings = {
     dots: false,

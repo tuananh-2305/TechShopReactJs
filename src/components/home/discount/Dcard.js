@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Data from "../../assets/data/Data";
-const Dcard = () => {
+const Dcard = ({ mode }) => {
   const { disCount } = Data;
   const settings = {
     dots: false,
@@ -12,6 +12,7 @@ const Dcard = () => {
     slidesToScroll: 1,
     autoplay: true,
   };
+  console.log(mode);
   return (
     <>
       <Slider {...settings}>
@@ -21,7 +22,7 @@ const Dcard = () => {
               <div className="img">
                 <img src={data.image} alt="" width="100%" />
               </div>
-              <h4>{data.name}</h4>
+              <h4 style={{ color: mode ? "white" : "black" }}>{data.name}</h4>
               <span>{data.price}</span>
             </div>
           );

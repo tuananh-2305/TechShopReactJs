@@ -1,11 +1,11 @@
 import React from "react";
 import "./Footer.css";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { changeMode } from "../../../redux/reducer";
+import MaterialUISwitch from "../changeDarkMode/darkMode";
 
 const Footer = () => {
   const dispatch = useDispatch();
-  const mode = useSelector((state) => state.darkMode.mode);
   return (
     <>
       <footer>
@@ -54,17 +54,15 @@ const Footer = () => {
             </ul>
           </div>
           <div className="box">
-            <h2>Contact Us</h2>
+            <div className="darkMode d_flex">
+              <h2>Contact Us</h2>
+              <MaterialUISwitch onClick={() => dispatch(changeMode())} />
+            </div>
             <ul>
               <li>277A/3 An Thanh, Thuan An , Binh Duong Province </li>
               <li>Email: ptanh2305p@gmail.com</li>
               <li>Phone: +84 834549697</li>
             </ul>
-          </div>
-          <div className="darkMode">
-            <button onClick={() => dispatch(changeMode())}>
-              {mode ? "Light" : "Dark"}
-            </button>
           </div>
         </div>
       </footer>

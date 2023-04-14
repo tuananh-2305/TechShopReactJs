@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const FlashCard = ({ productItems, addToCart }) => {
+const FlashCard = ({ productItems, addToCart, mode }) => {
   const [count, setCount] = useState(0);
   const increment = () => {
     setCount(count + 1);
@@ -43,7 +43,10 @@ const FlashCard = ({ productItems, addToCart }) => {
         {productItems.map((productItems, index) => {
           return (
             <div className="box" key={index}>
-              <div className="product mtop">
+              <div
+                className="product mtop"
+                style={{ background: mode ? "#15398f" : "white" }}
+              >
                 <div className="img">
                   <span className="discount">{productItems.discount}% Off</span>
                   <img src={productItems.image} alt="" />
@@ -53,7 +56,9 @@ const FlashCard = ({ productItems, addToCart }) => {
                   </div>
                 </div>
                 <div className="product-details">
-                  <h3>{productItems.name}</h3>
+                  <h3 style={{ color: mode ? "white" : "black" }}>
+                    {productItems.name}
+                  </h3>
                   <div className="rate">
                     <i className="fa fa-star"></i>
                     <i className="fa fa-star"></i>
