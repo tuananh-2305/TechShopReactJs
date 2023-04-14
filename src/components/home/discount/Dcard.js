@@ -12,7 +12,6 @@ const Dcard = ({ mode }) => {
     slidesToScroll: 1,
     autoplay: true,
   };
-  console.log(mode);
   return (
     <>
       <Slider {...settings}>

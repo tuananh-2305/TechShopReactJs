@@ -1,13 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
 import Data from "../../assets/data/Data";
-const Categories = ({ mode }) => {
+import { Context } from "../../../hook/useContext";
+const Categories = () => {
   const { categories } = Data;
+  const { mode } = useContext(Context);
   return (
     <>
       <div
         className="category"
         style={{
-          background: mode ? "#fffbf4" : "white",
+          background: mode ? "#003b48" : "white",
+          color: mode ? "white" : "black",
         }}
       >
         {categories.map((data, index) => {

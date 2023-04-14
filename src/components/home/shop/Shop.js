@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import Catg from "./Catg";
 import ShopCart from "./ShopCart";
 import "./style.css";
+import { Context } from "../../../hook/useContext";
 
-const Shop = ({ addToCart, shopItems, mode }) => {
+const Shop = () => {
+  const { mode } = useContext(Context);
   return (
     <>
       <section
@@ -26,11 +28,7 @@ const Shop = ({ addToCart, shopItems, mode }) => {
               </div>
             </div>
             <div className="product-content  grid1">
-              <ShopCart
-                addToCart={addToCart}
-                shopItems={shopItems}
-                mode={mode}
-              />
+              <ShopCart />
             </div>
           </div>
         </div>

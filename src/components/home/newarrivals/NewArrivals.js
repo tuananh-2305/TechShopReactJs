@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import Arrival from "./Arrival";
 import "./style.css";
 import NewLogo from "./../../assets/images/newlogo.png";
-const NewArrivals = ({ mode }) => {
+import { Context } from "../../../hook/useContext";
+const NewArrivals = () => {
+  const { mode } = useContext(Context);
   return (
     <>
       <section

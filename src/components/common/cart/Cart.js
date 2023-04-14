@@ -1,13 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./style.css";
-import { useSelector } from "react-redux";
+import { Context } from "../../../hook/useContext";
 
-const Cart = ({ cartItem, addToCart, decreaseQty, deleteCartItem }) => {
+const Cart = () => {
+  const { cartItem, addToCart, decreaseQty, deleteCartItem, mode } =
+    useContext(Context);
+
   const totalPrice = cartItem.reduce(
     (price, item) => price + item.qty * item.price,
     0
   );
-  const mode = useSelector((state) => state.darkMode.mode);
   return (
     <>
       <section

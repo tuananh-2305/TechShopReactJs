@@ -2,7 +2,6 @@ import React from "react";
 import Data from "../../assets/data/Data";
 const Arrival = ({ mode }) => {
   const { newArrivals } = Data;
-  console.log(mode);
   return (
     <>
       <div

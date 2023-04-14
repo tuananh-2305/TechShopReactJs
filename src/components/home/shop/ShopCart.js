@@ -1,6 +1,8 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
+import { Context } from "../../../hook/useContext";
 
-const ShopCart = ({ shopItems, addToCart, mode }) => {
+const ShopCart = () => {
+  const { addToCart, shopItems, mode } = useContext(Context);
   const [count, setCount] = useState(0);
   const increment = () => {
     setCount(count + 1);

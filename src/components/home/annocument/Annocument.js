@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import Banner1 from "./../../assets/images/banner-1.png";
 import Banner2 from "./../../assets/images/banner-2.png";
-const Annocument = ({ mode }) => {
+import { Context } from "../../../hook/useContext";
+const Annocument = () => {
+  const { mode } = useContext(Context);
   const mystyle = {
     width: "30%",
     height: "340px",

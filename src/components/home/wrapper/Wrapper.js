@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./style.css";
 import Data from "../../assets/data/Data";
-const Wrapper = ({ mode }) => {
+import { Context } from "../../../hook/useContext";
+const Wrapper = () => {
   const { wrapperData } = Data;
+  const { mode } = useContext(Context);
   return (
     <>
       <section
@@ -16,7 +18,7 @@ const Wrapper = ({ mode }) => {
                 className="product"
                 key={index}
                 style={{
-                  background: mode ? "#0072b7" : "white",
+                  background: mode ? "#2e0e07" : "white",
                 }}
               >
                 <div className="img icon-circle">

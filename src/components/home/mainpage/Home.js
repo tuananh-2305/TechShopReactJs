@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import Categories from "./Categories";
 import SliderHome from "./Slide";
+import { Context } from "../../../hook/useContext";
 
-const Home = ({ mode }) => {
+const Home = () => {
+  const { mode } = useContext(Context);
   return (
     <>
       <section
@@ -10,8 +12,8 @@ const Home = ({ mode }) => {
         style={{ background: mode ? "#121f29" : "white" }}
       >
         <div className="container d_flex">
-          <Categories mode={mode} />
-          <SliderHome mode={mode} />
+          <Categories />
+          <SliderHome />
         </div>
       </section>
     </>

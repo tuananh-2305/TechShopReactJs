@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import Dcard from "./Dcard";
 import Gift from "./../../assets/images/gift.png";
-const Discount = ({ mode }) => {
+import { Context } from "../../../hook/useContext";
+const Discount = () => {
+  const { mode } = useContext(Context);
   return (
     <>
       <section

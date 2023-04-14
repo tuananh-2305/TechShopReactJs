@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import Data from "../../assets/data/Data";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Context } from "../../../hook/useContext";
 
-const SlideCard = ({ mode }) => {
+const SlideCard = () => {
+  const { mode } = useContext(Context);
   const { slideData } = Data;
   const settings = {
     dots: true,

@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
 import FlashCard from "./FlashCard";
-const FlashDeals = ({ productItems, addToCart, mode }) => {
+import { Context } from "../../../hook/useContext";
+const FlashDeals = () => {
+  const { mode } = useContext(Context);
   return (
     <>
       <section
@@ -12,11 +14,7 @@ const FlashDeals = ({ productItems, addToCart, mode }) => {
             <i className="fa fa-bolt"></i>
             <h1 style={{ color: mode ? "white" : "black" }}>Flash Deals</h1>
           </div>
-          <FlashCard
-            productItems={productItems}
-            addToCart={addToCart}
-            mode={mode}
-          />
+          <FlashCard />
         </div>
       </section>
     </>

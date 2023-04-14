@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import TopCart from "./TopCart";
 import "./Style.css";
+import { Context } from "../../../hook/useContext";
 
-const TopCate = ({ mode }) => {
+const TopCate = () => {
+  const { mode } = useContext(Context);
   return (
     <>
       <section

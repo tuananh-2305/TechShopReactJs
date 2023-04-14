@@ -5,12 +5,12 @@ import Search from "./Search";
 import Navbar from "./Navbar";
 import { useSelector } from "react-redux";
 
-const Header = ({ cartItem }) => {
+const Header = () => {
   const mode = useSelector((state) => state.darkMode.mode);
   return (
     <>
       <Head />
-      <Search cartItem={cartItem} mode={mode} />
+      <Search mode={mode} />
       <Navbar mode={mode} />
     </>
   );

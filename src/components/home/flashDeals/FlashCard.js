@@ -1,9 +1,11 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Context } from "../../../hook/useContext";
 
-const FlashCard = ({ productItems, addToCart, mode }) => {
+const FlashCard = () => {
+  const { addToCart, productItems, mode } = useContext(Context);
   const [count, setCount] = useState(0);
   const increment = () => {
     setCount(count + 1);
@@ -45,7 +47,7 @@ const FlashCard = ({ productItems, addToCart, mode }) => {
             <div className="box" key={index}>
               <div
                 className="product mtop"
-                style={{ background: mode ? "#15398f" : "white" }}
+                style={{ background: mode ? "#3f4777" : "white" }}
               >
                 <div className="img">
                   <span className="discount">{productItems.discount}% Off</span>

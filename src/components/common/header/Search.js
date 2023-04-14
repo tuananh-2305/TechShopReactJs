@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { Context } from "../../../hook/useContext";
 
-const Search = ({ cartItem, mode }) => {
+const Search = ({ mode }) => {
   window.addEventListener("scroll", function () {
     const search = document.querySelector(".search");
     search.classList.toggle("active", window.scrollY > 100);
   });
+  const { cartItem } = useContext(Context);
   return (
     <>
       <section

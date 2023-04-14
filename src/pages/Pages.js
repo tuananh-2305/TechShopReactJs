@@ -7,24 +7,18 @@ import Shop from "../components/home/shop/Shop";
 import Annocument from "../components/home/annocument/Annocument";
 import Wrapper from "../components/home/wrapper/Wrapper";
 import NewArrivals from "../components/home/newarrivals/NewArrivals";
-import { useSelector } from "react-redux";
 
-const Pages = ({ productItems, cartItem, addToCart, shopItems }) => {
-  const mode = useSelector((state) => state.darkMode.mode);
+const Pages = () => {
   return (
     <>
-      <Home cartItem={cartItem} mode={mode} />
-      <FlashDeals
-        productItems={productItems}
-        addToCart={addToCart}
-        mode={mode}
-      />
-      <TopCate mode={mode} />
-      <NewArrivals mode={mode} />
-      <Discount mode={mode} />
-      <Shop addToCart={addToCart} shopItems={shopItems} mode={mode} />
-      <Annocument mode={mode} />
-      <Wrapper mode={mode} />
+      <Home />
+      <FlashDeals />
+      <TopCate />
+      <NewArrivals />
+      <Discount />
+      <Shop />
+      <Annocument />
+      <Wrapper />
     </>
   );
 };

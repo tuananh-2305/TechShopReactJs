@@ -17,7 +17,11 @@ const TopCart = ({ mode }) => {
       <Slider {...settings}>
         {topCart.map((data, index) => {
           return (
-            <div className="box product" key={index}>
+            <div
+              className="box product"
+              key={index}
+              style={{ background: mode ? "#4d1b1b" : "white" }}
+            >
               <div className="nametop d_flex">
                 <span className="tleft">{data.para}</span>
                 <span className="tright">{data.desc}</span>

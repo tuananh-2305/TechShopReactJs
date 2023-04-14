@@ -6,7 +6,7 @@ const Catg = ({ mode }) => {
     <>
       <div
         className="category"
-        style={{ background: mode ? "#15398f" : "white" }}
+        style={{ background: mode ? "#3d090f" : "white" }}
       >
         <div
           className="chead d_flex"

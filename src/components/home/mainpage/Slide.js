@@ -1,12 +1,12 @@
 import React from "react";
 import SlideCard from "./SlideCard";
 import "./Home.css";
-const SliderHome = ({ mode }) => {
+const SliderHome = () => {
   return (
     <>
       <section className="homeSlide contentWidth">
         <div className="container">
-          <SlideCard mode={mode} />
+          <SlideCard />
         </div>
       </section>
     </>
