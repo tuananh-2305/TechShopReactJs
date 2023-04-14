@@ -103,7 +103,7 @@
   padding: 0px 30px;
   border-radius: 5px;
   height: 6vh;
-  margin-top: 5px;
+  margin-top: 8px;
 }
 .catgrories span {
   margin-right: 20px;
@@ -150,7 +150,7 @@ header ul li a:hover {
   transition: 0.5s;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   header ul {
     padding-top: 30px;
   }
@@ -202,4 +202,4 @@ header ul li a:hover {
   .header.active {
     height: 10vh;
   }
-}
+} */

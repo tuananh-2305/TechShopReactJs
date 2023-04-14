@@ -8,7 +8,7 @@ const Navbar = ({ mode }) => {
         <div
           className="container d_flex"
           style={{
-            background: mode ? "#0983b2" : "white",
+            background: mode ? "#e2e2e2" : "white",
           }}
         >
           <div className="catgrories d_flex">

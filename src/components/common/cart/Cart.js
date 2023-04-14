@@ -1,14 +1,19 @@
 import React from "react";
 import "./style.css";
+import { useSelector } from "react-redux";
 
 const Cart = ({ cartItem, addToCart, decreaseQty, deleteCartItem }) => {
   const totalPrice = cartItem.reduce(
     (price, item) => price + item.qty * item.price,
     0
   );
+  const mode = useSelector((state) => state.darkMode.mode);
   return (
     <>
-      <section className="cart-items">
+      <section
+        className="cart-items"
+        style={{ background: mode ? "#003042" : "white" }}
+      >
         <div className="container d_flex">
           <div className="cart-details">
             {cartItem.length === 0 && (
@@ -61,7 +66,10 @@ const Cart = ({ cartItem, addToCart, decreaseQty, deleteCartItem }) => {
             })}
           </div>
 
-          <div className="cart-total product">
+          <div
+            className="cart-total product"
+            style={{ background: mode ? "#fffbf4" : "white" }}
+          >
             <h2>Cart Summary</h2>
             <div className=" d_flex">
               <h4>Total Price :</h4>

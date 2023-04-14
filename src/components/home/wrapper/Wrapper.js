@@ -16,7 +16,7 @@ const Wrapper = ({ mode }) => {
                 className="product"
                 key={index}
                 style={{
-                  background: mode ? "#15398f" : "white",
+                  background: mode ? "#0072b7" : "white",
                 }}
               >
                 <div className="img icon-circle">
