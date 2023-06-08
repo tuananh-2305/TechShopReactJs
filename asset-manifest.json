@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/TechShopReactJs/static/css/main.dbd48d28.css",
+    "main.js": "/TechShopReactJs/static/js/main.b9baca1d.js",
+    "static/js/787.524f7680.chunk.js": "/TechShopReactJs/static/js/787.524f7680.chunk.js",
+    "static/media/banner-2.png": "/TechShopReactJs/static/media/banner-2.9dc95b12b9160e169f85.png",
+    "static/media/banner-1.png": "/TechShopReactJs/static/media/banner-1.4e4b0b361a056de42cec.png",
+    "static/media/slick.svg": "/TechShopReactJs/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/TechShopReactJs/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/TechShopReactJs/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/TechShopReactJs/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/TechShopReactJs/index.html",
+    "main.dbd48d28.css.map": "/TechShopReactJs/static/css/main.dbd48d28.css.map",
+    "main.b9baca1d.js.map": "/TechShopReactJs/static/js/main.b9baca1d.js.map",
+    "787.524f7680.chunk.js.map": "/TechShopReactJs/static/js/787.524f7680.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dbd48d28.css",
+    "static/js/main.b9baca1d.js"
+  ]
+}
