@@ -16,8 +16,12 @@ const Categories = () => {
         {categories.map((data, index) => {
           return (
             <div className="box f_flex" key={index}>
-              <img src={data.cateImg} alt="" />
-              <span>{data.cateName}</span>
+              <div>
+                <img src={data.cateImg} alt="" />
+              </div>
+              <div>
+                <span>{data.cateName}</span>
+              </div>
             </div>
           );
         })}

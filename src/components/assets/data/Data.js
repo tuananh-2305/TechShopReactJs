@@ -259,47 +259,58 @@ const Data = {
   ],
   categories: [
     {
-      cateImg: "./../images/category/cat1.png",
+      cateImg:
+        "https://theme.hstatic.net/1000360022/1001007847/14/policies_icon_4.png?v=628",
       cateName: "Fashion",
     },
     {
-      cateImg: "./../images/category/cat2.png",
+      cateImg:
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/How_to_use_icon.svg/1107px-How_to_use_icon.svg.png",
       cateName: "Electronic",
     },
     {
-      cateImg: "./../images/category/cat3.png",
+      cateImg:
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Flat_cross_icon.svg/1200px-Flat_cross_icon.svg.png",
       cateName: "Cars",
     },
     {
-      cateImg: "./../images/category/cat4.png",
+      cateImg:
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/How_to_use_icon.svg/1107px-How_to_use_icon.svg.png",
       cateName: "Home & Garden",
     },
     {
-      cateImg: "./../images/category/cat5.png",
+      cateImg:
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Flat_cross_icon.svg/1200px-Flat_cross_icon.svg.png",
       cateName: "Gifts",
     },
     {
-      cateImg: "./../images/category/cat6.png",
+      cateImg:
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/How_to_use_icon.svg/1107px-How_to_use_icon.svg.png",
       cateName: "Music",
     },
     {
-      cateImg: "./../images/category/cat7.png",
+      cateImg:
+        "https://theme.hstatic.net/1000360022/1001007847/14/policies_icon_4.png?v=628",
       cateName: "Health & Beauty",
     },
     {
-      cateImg: "./../images/category/cat8.png",
+      cateImg:
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Flat_cross_icon.svg/1200px-Flat_cross_icon.svg.png",
       cateName: "Pets",
     },
     {
-      cateImg: "./../images/category/cat9.png",
+      cateImg:
+        "https://theme.hstatic.net/1000360022/1001007847/14/policies_icon_4.png?v=628",
       cateName: "Baby Toys",
     },
     {
-      cateImg: "./../images/category/cat10.png",
+      cateImg:
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/How_to_use_icon.svg/1107px-How_to_use_icon.svg.png",
       cateName: "Groceries",
     },
     {
-      cateImg: "./../images/category/cat11.png",
+      cateImg:
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Flat_cross_icon.svg/1200px-Flat_cross_icon.svg.png",
       cateName: "Books",
     },
   ],

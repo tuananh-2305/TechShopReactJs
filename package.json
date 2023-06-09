@@ -2,7 +2,7 @@
   "name": "shopreact",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://tuananh-2305.github.io/shopReactJS/",
+  "homepage": "https://tuananh-2305.github.io/TechShopReactJs/",
   "dependencies": {
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
